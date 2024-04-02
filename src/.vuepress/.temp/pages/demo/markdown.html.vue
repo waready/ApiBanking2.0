@@ -44,12 +44,57 @@
 <li><a href="https://theme-hope.vuejs.press/guide/markdown/hint.html" target="_blank" rel="noopener noreferrer">View Detail<ExternalLinkIcon/></a></li>
 </ul>
 <h4 id="tabs" tabindex="-1"><a class="header-anchor" href="#tabs"><span>Tabs</span></a></h4>
-<Tabs id="89" :data='[{"id":"apple"},{"id":"banana"},{"id":"orange"}]' tab-id="fruit">
-<template #title0="{ value, isActive }">apple</template>
-<template #title1="{ value, isActive }">banana</template>
-<template #title2="{ value, isActive }">orange</template>
+<Tabs id="89" :data='[{"id":"Datos de Entrada"},{"id":"Datos de Salida"},{"id":"Errores"}]' tab-id="fruit">
+<template #title0="{ value, isActive }">Datos de Entrada</template>
+<template #title1="{ value, isActive }">Datos de Salida</template>
+<template #title2="{ value, isActive }">Errores</template>
 <template #tab0="{ value, isActive }">
-<p>Apple</p>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Tipo</th>
+<th>Comentarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>procesoId</td>
+<td>Short</td>
+<td>[Hidden: Identificador de proceso Workflow].</td>
+</tr>
+<tr>
+<td>tareaId</td>
+<td>Short</td>
+<td>[Hidden: Identificador de tarea Workflow].</td>
+</tr>
+<tr>
+<td>tipoSolicitud</td>
+<td>Byte</td>
+<td>[Hidden: Identificador de tipo de solicitud &quot;Ampliación&quot;].</td>
+</tr>
+<tr>
+<td>usuarioIngreso</td>
+<td>String</td>
+<td>Usuario que ingresa la solicitud. En caso de no especificarse, se asigna el usuario conectado.</td>
+</tr>
+<tr>
+<td>fechaIngreso</td>
+<td>Date</td>
+<td>Fecha en la que se ingresa la solicitud. En caso de no especificarse, se asigna fecha apertura.</td>
+</tr>
+<tr>
+<td>usuarioAsignacion</td>
+<td>String</td>
+<td>Usuario al que queda asignada la tarea de solicitud. En caso de no especificarse, se asigna al Asesor de créditos.</td>
+</tr>
+<tr>
+<td>datosSolicitud</td>
+<td>sBTSolicitudIndividual</td>
+<td>Datos de la solicitud.</td>
+</tr>
+</tbody>
+</table>
 </template>
 <template #tab1="{ value, isActive }">
 <p>Banana</p>
@@ -62,7 +107,7 @@
 <li><a href="https://theme-hope.vuejs.press/guide/markdown/tabs.html" target="_blank" rel="noopener noreferrer">View Detail<ExternalLinkIcon/></a></li>
 </ul>
 <h4 id="code-tabs" tabindex="-1"><a class="header-anchor" href="#code-tabs"><span>Code Tabs</span></a></h4>
-<CodeTabs id="116" :data='[{"id":"pnpm"},{"id":"yarn"},{"id":"npm"}]' :active="2" tab-id="shell">
+<CodeTabs id="207" :data='[{"id":"pnpm"},{"id":"yarn"},{"id":"npm"}]' :active="2" tab-id="shell">
 <template #title0="{ value, isActive }">pnpm</template>
 <template #title1="{ value, isActive }">yarn</template>
 <template #title2="{ value, isActive }">npm</template>

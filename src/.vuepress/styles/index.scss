@@ -1,1 +1,185 @@
-// place your custom styles here
+
+// PROPIEDADES DE LAS TABLAS DE DATOS ENTRADA - SALIDA Y ERRORES
+    // Propiedades del contenedor general de la tabla
+    .vp-tabs {
+        margin: 3rem 0;
+        //border: 2px solid var(--vp-brc);
+        border-radius: 1rem;
+        box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    // Propiedades de la barra que contiene las pestañas
+    .vp-tabs-nav {
+        overflow-x: clip;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        background: var(--tab-nav-bg-color);
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    // Propiedades de la etiqueta de la pestaña activa
+    .vp-tab-nav {
+        position: relative;
+        width: 33.3%;
+        min-width: 4rem;
+        margin: 0;
+        padding: 0.5rem 0 0.5rem 0;
+        border-radius: 1rem 1rem 0 0;
+      
+        background: var(--tab-nav-bg-color);
+        color: var(--tab-nav-text-color);
+      
+        font-weight: 600;
+        font-size: 0.85em;
+        line-height: 1.75;
+      
+        cursor: pointer;
+      
+        transition:
+          background var(--vp-ct),
+          color var(--vp-ct);
+      
+        &:hover {
+          background: var(--tab-nav-hover-color);
+        }
+      
+        &::before,
+        &::after {
+          content: " ";
+      
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+      
+          width: 8px;
+          height: 8px;
+        }
+      
+        &::before {
+          right: 100%;
+        }
+      
+        &::after {
+          left: 100%;
+        }
+      
+        &.active {
+          background: var(--tab-bg-color);
+      
+          &::before {
+            background: radial-gradient(
+              16px at left top,
+              transparent 50%,
+              var(--tab-bg-color) 50%
+            );
+          }
+      
+          &::after {
+            background: radial-gradient(
+              16px at right top,
+              transparent 50%,
+              var(--tab-bg-color) 50%
+            );
+          }
+        }
+      
+        &:first-child {
+          &::before {
+            display: none;
+          }
+        }
+    }
+
+    // Propiedades del contenido de la pestaña activa
+    .vp-tab {
+        display: none;
+        padding: 1rem 2rem 1rem 2rem;
+        background: var(--note-bg-color);
+        border-radius: 0 0 1rem 1rem;
+        transition: background var(--vp-ct);
+      
+        @media print {
+          display: block;
+          padding: 0.5rem;
+        }
+      
+        &.active {
+          display: block;
+        }
+      
+        &:nth-child(n + 2) .vp-tab-title {
+          border-top: none;
+        }
+    }
+// FIN PROPIEDADES DE LAS TABLAS DE DATOS ENTRADA - SALIDA Y ERRORES
+
+/* Estilos generales para la tabla */
+table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    width: 100%;
+    border-width: 1px;
+    border-spacing: 0;
+    border-style: solid;
+    table-layout: fixed;
+    background-color: --bg-color;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%; /* Ancho de la primera columna */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 20%; /* Ancho de la segunda columna */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 50%; /* Ancho de la tercera columna */
+}
+
+// Oculta el ícono de INFO
+.hint-container-title::before {
+    visibility: hidden;
+}
+
+h1 {
+    font-family: "open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+// Oculta la barra separadora entre el título y el recuadro de abajo
+hr { 
+    border: none;
+}
+
+body {
+    font-family: "open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.note {
+  margin: 0; // Para que no tenga margenes
+  padding: 0.5rem 2rem;
+  border-inline-start-width: 0.3rem;
+  border-inline-start-style: solid;
+  border-radius: 1rem;
+  border-color: var(--note-border-color);
+  background: var(--note-bg-color);
+  box-shadow:  10px 12px 15px rgba(0, 0, 0, 0.08); // Sombra para el contenedor Note
+  border-inline-start-width: 0rem; // Para que no tenga linea en el borde
+  > .hint-container-title {
+    color: var(--note-title-color);
+  }
+
+  code {
+    background: var(--note-code-bg-color);
+  }
+}
+  

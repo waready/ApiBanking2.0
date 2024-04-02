@@ -88,17 +88,25 @@ A custom details container
 
 #### Tabs
 
-::: tabs#fruit
+::: tabs #fruit
 
-@tab apple
+@tab Datos de Entrada
 
-Apple
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+procesoId | Short | [Hidden: Identificador de proceso Workflow]. 
+tareaId | Short | [Hidden: Identificador de tarea Workflow]. 
+tipoSolicitud | Byte | [Hidden: Identificador de tipo de solicitud "Ampliación"]. 
+usuarioIngreso | String | Usuario que ingresa la solicitud. En caso de no especificarse, se asigna el usuario conectado. 
+fechaIngreso | Date | Fecha en la que se ingresa la solicitud. En caso de no especificarse, se asigna fecha apertura. 
+usuarioAsignacion | String | Usuario al que queda asignada la tarea de solicitud. En caso de no especificarse, se asigna al Asesor de créditos. 
+datosSolicitud | sBTSolicitudIndividual | Datos de la solicitud. 
 
-@tab banana
+@tab Datos de Salida
 
 Banana
 
-@tab orange
+@tab Errores
 
 Orange
 

@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar } from "./navbar/index.js";
+import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -12,7 +12,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://www.bantotal.com/wp-content/uploads/2017/11/nuevo-logo-web_Mesa-de-trabajo-1.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -32,26 +32,6 @@ export default hopeTheme({
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
       },
     },
   },

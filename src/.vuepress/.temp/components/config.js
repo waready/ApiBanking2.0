@@ -1,12 +1,12 @@
 import { defineClientConfig } from "vuepress/client";
-import { hasGlobalComponent } from "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/@vuepress/helper/lib/client/index.js";
+import { hasGlobalComponent } from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/@vuepress/helper/lib/client/index.js";
 
-import { useScriptTag } from "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/@vueuse/core/index.mjs";
-import FontIcon from "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import Badge from "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import VPCard from "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
+import { useScriptTag } from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/@vueuse/core/index.mjs";
+import FontIcon from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import Badge from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import VPCard from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
 
-import "C:/Users/Desktop-7/Desktop/desarrollo/ApiBanking/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
