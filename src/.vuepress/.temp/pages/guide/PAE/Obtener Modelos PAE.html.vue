@@ -1,72 +1,69 @@
-<template><div><h1 id="obtener-modelos-pae" tabindex="-1"><a class="header-anchor" href="#obtener-modelos-pae"><span>Obtener Modelos PAE</span></a></h1>
-<p>Método para obtener los modelos PAE.</p>
-<table>
-<thead>
-<tr>
-<th>Nombre publicación</th>
-<th>Programa</th>
-<th>Global/País</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BTPAE.ObtenerModelosPAE</td>
-<td>RBTPGP51</td>
-<td>Global</td>
-</tr>
-</tbody>
-</table>
-<h3 id="datos-de-entrada" tabindex="-1"><a class="header-anchor" href="#datos-de-entrada"><span>Datos de entrada</span></a></h3>
+<template><div><div class="hint-container note">
+<p class="hint-container-title">Método para obtener los modelos PAE.</p>
+<p><strong>Nombre publicación:</strong> BTPAE.ObtenerModelosPAE</p>
+<p><strong>Programa:</strong> RBTPGP51</p>
+<p><strong>Global/País:</strong> Global</p>
+<Tabs id="10" :data='[{"id":"Datos de Entrada"},{"id":"Datos de Salida"},{"id":"Errores"}]' tab-id="Datos <!--ABRE LA TABLA DE DATOS -->">
+<template #title0="{ value, isActive }">Datos de Entrada</template>
+<template #title1="{ value, isActive }">Datos de Salida</template>
+<template #title2="{ value, isActive }">Errores</template>
+<template #tab0="{ value, isActive }">
 <p>No aplica.</p>
-<h3 id="datos-de-salida" tabindex="-1"><a class="header-anchor" href="#datos-de-salida"><span>Datos de salida</span></a></h3>
+</template>
+<template #tab1="{ value, isActive }">
 <table>
 <thead>
 <tr>
-<th>Nombre</th>
-<th>Tipo</th>
-<th>Comentarios</th>
+<th style="text-align:center">Nombre</th>
+<th style="text-align:center">Tipo</th>
+<th style="text-align:center">Comentarios</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>sdtModelosPAE</td>
-<td>sBTModeloPAE</td>
-<td>Listado de modelos PAE.</td>
+<td style="text-align:center">sdtModelosPAE</td>
+<td style="text-align:center">sBTModeloPAE</td>
+<td style="text-align:center">Listado de modelos PAE.</td>
 </tr>
 </tbody>
 </table>
-<p>Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes:</p>
+<details class="hint-container details"><summary>Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes:</summary>
 <table>
 <thead>
 <tr>
-<th>Nombre</th>
-<th>Tipo</th>
-<th>Comentarios</th>
+<th style="text-align:center">Nombre</th>
+<th style="text-align:center">Tipo</th>
+<th style="text-align:center">Comentarios</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>modeloID</td>
-<td>Short</td>
-<td>Código de modelo.</td>
+<td style="text-align:center">modeloID</td>
+<td style="text-align:center">Short</td>
+<td style="text-align:center">Código de modelo.</td>
 </tr>
 <tr>
-<td>descripcion</td>
-<td>String</td>
-<td>Descripción de modelo.</td>
+<td style="text-align:center">descripcion</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Descripción de modelo.</td>
 </tr>
 <tr>
-<td>tipoModelo</td>
-<td>String</td>
-<td>Tipo de modelo.</td>
+<td style="text-align:center">tipoModelo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Tipo de modelo.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="errores" tabindex="-1"><a class="header-anchor" href="#errores"><span>Errores</span></a></h3>
+</details>
+</template>
+<template #tab2="{ value, isActive }">
 <p>No aplica.</p>
-<blockquote>
-<p>Ejemplo de invocación al servicio de Obtener Modelos PAE:</p>
-</blockquote>
+<Tabs id="102" :data='[]' tab-id="Datos">
+</Tabs>
+</template>
+</Tabs>
+</div>
+<details class="hint-container details"><summary>Ejemplo de invocación al servicio de Obtener Modelos PAE:</summary>
 <code-group> 
 <code-block title="XML" active> 
 ```xml 
@@ -105,6 +102,7 @@ curl -X POST \
 ``` 
 </code-block> 
 </code-group> 
+</details>
 <blockquote>
 <p>El POST retornará la siguiente estructura:</p>
 </blockquote>
@@ -397,6 +395,7 @@ curl -X POST \
 ``` 
 </code-block> 
 </code-group> 
+:::
 </div></template>
 
 

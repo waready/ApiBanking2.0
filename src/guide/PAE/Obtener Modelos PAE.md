@@ -13,39 +13,45 @@ footer: false
 backtotop: false
 ---
 
-# Obtener Modelos PAE 
 
-Método para obtener los modelos PAE. 
+::: note Método para obtener los modelos PAE.
 
-Nombre publicación | Programa | Global/País 
---------- | ----------- | ----------- 
-BTPAE.ObtenerModelosPAE | RBTPGP51 | Global 
+**Nombre publicación:** BTPAE.ObtenerModelosPAE
+
+**Programa:** RBTPGP51
+
+**Global/País:** Global
 
 
-### Datos de entrada 
+
+::: tabs #Datos <!--ABRE LA TABLA DE DATOS -->
+
+@tab Datos de Entrada
 
 No aplica. 
 
-### Datos de salida 
+@tab Datos de Salida
 
 Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
+:---------: | :-----------: | :-----------: 
 sdtModelosPAE | sBTModeloPAE | Listado de modelos PAE. 
 
-Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes: 
+::: details Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes: 
 
 Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
+:---------: | :-----------: | :-----------: 
 modeloID | Short | Código de modelo. 
 descripcion | String | Descripción de modelo. 
 tipoModelo | String | Tipo de modelo. 
 
-### Errores 
+@tab Errores
 
 No aplica. 
 
+::: tabs #Datos
+:::
 
-> Ejemplo de invocación al servicio de Obtener Modelos PAE: 
+::: details Ejemplo de invocación al servicio de Obtener Modelos PAE: 
 
 <code-group> 
 <code-block title="XML" active> 
@@ -86,6 +92,7 @@ curl -X POST \
 ``` 
 </code-block> 
 </code-group> 
+:::
 
 > El POST retornará la siguiente estructura: 
 
@@ -379,6 +386,6 @@ curl -X POST \
 ``` 
 </code-block> 
 </code-group> 
-
+:::
 
  

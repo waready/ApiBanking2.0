@@ -14,7 +14,7 @@ backtotop: false
 ---
 
 ::: note Método para obtener los items de un determinado modelo PAE.
-**Nombre publicación:** BTPAE.ObtenerItemsModelo  
+**Nombre publicación:** BTPAE.ObtenerItemsModelo
 
 **Programa:** RBTPGP52
 
@@ -312,6 +312,6 @@ curl -X POST \
 ``` 
 :::
 
-::: details Swagger
+::: warning Swagger
 <iframe src="https://pioneroapp2:3033/api-docs/#/AhorroProgramado/post_api_AhorroProgramado_v1_Crear" width="100%" height="450"/>
 :::

@@ -1,6 +1,7 @@
 
 // PROPIEDADES DE LAS TABLAS DE DATOS ENTRADA - SALIDA Y ERRORES
     // Propiedades del contenedor general de la tabla
+
     .vp-tabs {
         margin: 3rem 0;
         //border: 2px solid var(--vp-brc);
@@ -15,7 +16,7 @@
         padding: 0;
         width: 100%;
         border-radius: 1rem 1rem 0 0;
-        background: var(--tab-nav-bg-color);
+        background: var(--table-grey-1);
         list-style: none;
         white-space: nowrap;
     }
@@ -23,13 +24,13 @@
     // Propiedades de la etiqueta de la pestaña activa
     .vp-tab-nav {
         position: relative;
-        width: 33.3%;
+        width: 33.33%;
         min-width: 4rem;
         margin: 0;
         padding: 0.5rem 0 0.5rem 0;
         border-radius: 1rem 1rem 0 0;
       
-        background: var(--tab-nav-bg-color);
+        background: var(--table-grey-1);
         color: var(--tab-nav-text-color);
       
         font-weight: 600;
@@ -67,7 +68,7 @@
         }
       
         &.active {
-          background: var(--tab-bg-color);
+          background: var(--note-bg-color);
       
           &::before {
             background: radial-gradient(
@@ -127,22 +128,28 @@ table {
     border-spacing: 0;
     border-style: solid;
     table-layout: fixed;
-    background-color: --bg-color;
+    background-color: --grey14;
 }
 
 th:nth-child(1),
 td:nth-child(1) {
   width: 10%; /* Ancho de la primera columna */
+  background-color: --grey14;
+  border: none;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
   width: 20%; /* Ancho de la segunda columna */
+  background-color: --grey14;
+  border: none;
 }
 
 th:nth-child(3),
 td:nth-child(3) {
   width: 50%; /* Ancho de la tercera columna */
+  background-color: --grey14;
+  border: none;
 }
 
 // Oculta el ícono de INFO
@@ -182,4 +189,5 @@ body {
     background: var(--note-code-bg-color);
   }
 }
-  
+
+
