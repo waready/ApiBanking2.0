@@ -3,7 +3,8 @@
 <p><strong>Nombre publicación:</strong> BTPAE.ObtenerModelosPAE</p>
 <p><strong>Programa:</strong> RBTPGP51</p>
 <p><strong>Global/País:</strong> Global</p>
-<Tabs id="10" :data='[{"id":"Datos de Entrada"},{"id":"Datos de Salida"},{"id":"Errores"}]' tab-id="Datos <!--ABRE LA TABLA DE DATOS -->">
+</div>
+<Tabs id="11" :data='[{"id":"Datos de Entrada"},{"id":"Datos de Salida"},{"id":"Errores"}]' tab-id="Datos <!--ABRE LA TABLA DE DATOS -->">
 <template #title0="{ value, isActive }">Datos de Entrada</template>
 <template #title1="{ value, isActive }">Datos de Salida</template>
 <template #title2="{ value, isActive }">Errores</template>
@@ -58,11 +59,6 @@
 </template>
 <template #tab2="{ value, isActive }">
 <p>No aplica.</p>
-<Tabs id="102" :data='[]' tab-id="Datos">
-</Tabs>
-</template>
-</Tabs>
-</div>
 <details class="hint-container details"><summary>Ejemplo de invocación al servicio de Obtener Modelos PAE:</summary>
 <code-group> 
 <code-block title="XML" active> 
@@ -103,6 +99,8 @@ curl -X POST \
 </code-block> 
 </code-group> 
 </details>
+</template>
+</Tabs>
 <blockquote>
 <p>El POST retornará la siguiente estructura:</p>
 </blockquote>

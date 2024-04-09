@@ -1,0 +1,16 @@
+import comp from "C:/Users/gpontes/Desktop/API/API NUEVA - V2/ApiBanking2.0/src/.vuepress/.temp/pages/guide/Cuentas Corrientes/Obtener/Obtener Comisión Chequera.html.vue"
+const data = JSON.parse("{\"path\":\"/guide/Cuentas%20Corrientes/Obtener/Obtener%20Comisi%C3%B3n%20Chequera.html\",\"title\":\"Obtener Comisión Chequera\",\"lang\":\"en-US\",\"frontmatter\":{\"description\":\"Obtener Comisión Chequera Método para devolver el importe de comisión que se cobrará, dada una cuenta y un tipo de chequera. Ejemplo de invocación al servicio de Obtener Comisió...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://vuepress-theme-hope-docs-demo.netlify.app/guide/Cuentas%20Corrientes/Obtener/Obtener%20Comisi%C3%B3n%20Chequera.html\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Obtener Comisión Chequera\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Obtener Comisión Chequera Método para devolver el importe de comisión que se cobrará, dada una cuenta y un tipo de chequera. Ejemplo de invocación al servicio de Obtener Comisió...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Mr.Hope\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Obtener Comisión Chequera\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Mr.Hope\\\",\\\"url\\\":\\\"https://mister-hope.com\\\"}]}\"]]},\"headers\":[{\"level\":3,\"title\":\"Datos de entrada\",\"slug\":\"datos-de-entrada\",\"link\":\"#datos-de-entrada\",\"children\":[]},{\"level\":3,\"title\":\"Datos de salida\",\"slug\":\"datos-de-salida\",\"link\":\"#datos-de-salida\",\"children\":[]},{\"level\":3,\"title\":\"Errores\",\"slug\":\"errores\",\"link\":\"#errores\",\"children\":[]}],\"readingTime\":{\"minutes\":1.35,\"words\":405},\"filePathRelative\":\"guide/Cuentas Corrientes/Obtener/Obtener Comisión Chequera.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -51,7 +51,6 @@ Código | Descripción
 
 ::: details Ejemplo de Invocación
 ::: code-tabs #Formato
-
 @tab XML
 ```xml 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bts="http://uy.com.dlya.bantotal/BTSOA/"> 
@@ -312,6 +311,6 @@ curl -X POST \
 ``` 
 :::
 
-::: warning Swagger
+::: note Swagger
 <iframe src="https://pioneroapp2:3033/api-docs/#/AhorroProgramado/post_api_AhorroProgramado_v1_Crear" width="100%" height="450"/>
 :::

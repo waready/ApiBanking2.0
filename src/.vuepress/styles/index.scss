@@ -29,7 +29,7 @@
         margin: 0;
         padding: 0.5rem 0 0.5rem 0;
         border-radius: 1rem 1rem 0 0;
-      
+              
         background: var(--table-grey-1);
         color: var(--tab-nav-text-color);
       
@@ -189,5 +189,40 @@ body {
     background: var(--note-code-bg-color);
   }
 }
+
+/* Estilos para las subpestañas */
+.nested-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-tabs input[type="radio"] {
+  display: none;
+}
+
+.nested-tabs label {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+}
+
+.nested-tabs label:hover {
+  background-color: #e0e0e0;
+}
+
+.nested-tabs .tab-content {
+  display: none;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Mostrar contenido de la subpestaña seleccionada */
+.nested-tabs input[type="radio"]:checked + label + .tab-content {
+  display: block;
+}
+
 
 

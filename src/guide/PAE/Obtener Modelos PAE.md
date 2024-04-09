@@ -21,8 +21,7 @@ backtotop: false
 **Programa:** RBTPGP51
 
 **Global/País:** Global
-
-
+::: 
 
 ::: tabs #Datos <!--ABRE LA TABLA DE DATOS -->
 
@@ -47,9 +46,6 @@ tipoModelo | String | Tipo de modelo.
 @tab Errores
 
 No aplica. 
-
-::: tabs #Datos
-:::
 
 ::: details Ejemplo de invocación al servicio de Obtener Modelos PAE: 
 
